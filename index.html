@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Albert Einstein · Digital CV</title>
+  <!-- Font Awesome 6.5.1 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- PRINT BUTTON (fixed) -->
+  <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i> Print / PDF</button>
+
+  <div class="container">
+
+    <!-- HERO HEADER (photo left / name center / contact right) -->
+    <header class="hero">
+      <div class="hero-photo">
+        <div class="photo-circle" aria-label="profile photo">AE</div>
+      </div>
+      <div class="hero-name-title">
+        <h1>Albert Einstein</h1>
+        <div class="title">Theoretical Physicist · Nobel Laureate</div>
+      </div>
+      <div class="hero-contact">
+        <a href="#" class="contact-item" aria-label="Email"><i class="fas fa-envelope"></i> <span>einstein@example.org</span></a>
+        <a href="#" class="contact-item" aria-label="Phone"><i class="fas fa-phone-alt"></i> <span>+41 44 123 4567</span></a>
+        <a href="#" class="contact-item" aria-label="Location"><i class="fas fa-map-pin"></i> <span>Zurich, CH</span></a>
+        <a href="#" class="contact-item" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="contact-item" aria-label="Website"><i class="fas fa-globe"></i></a>
+      </div>
+    </header>
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main-grid">
+    <!-- LEFT SIDEBAR (photo + quick contact + skills) -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-photo">
+          <div class="photo-circle" aria-label="profile photo">AE</div>
+        </div>
+        <ul class="quick-contact">
+          <li><i class="fas fa-envelope"></i> einstein@example.org</li>
+          <li><i class="fas fa-phone-alt"></i> +41 44 123 4567</li>
+          <li><i class="fas fa-map-pin"></i> Zurich, Switzerland</li>
+          <li><i class="fab fa-linkedin"></i> linkedin.com/in/einstein</li>
+          <li><i class="fas fa-globe"></i> einstein.org</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3 style="font-size:1.2rem; margin-bottom:0.8rem; color:var(--navy);">Skills summary</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">Theoretical Physics</span>
+          <span class="skill-tag">Quantum Mechanics</span>
+          <span class="skill-tag">General Relativity</span>
+          <span class="skill-tag">Thermodynamics</span>
+          <span class="skill-tag">Statistical Mechanics</span>
+          <span class="skill-tag">Mathematical Physics</span>
+          <span class="skill-tag">Cosmology</span>
+          <span class="skill-tag">Brownian motion</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT MAIN CONTENT (all sections) -->
+    <div class="main-content">
+
+      <!-- PROFESSIONAL SUMMARY -->
+      <section id="summary">
+        <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
+        <p style="font-size:1.05rem; max-width:720px;">Nobel Prize-winning theoretical physicist best known for developing the theory of relativity, one of the two pillars of modern physics. My work has profoundly influenced the philosophy of science and our understanding of space, time, and gravity. Passionate about unifying the laws of physics and a dedicated advocate for civil rights and education.</p>
+      </section>
+
+      <!-- EXPERIENCE (vertical timeline) -->
+      <section id="experience">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">1914 – 1933</div>
+            <div class="timeline-title">Professor of Theoretical Physics</div>
+            <div class="timeline-sub">Humboldt University of Berlin & Kaiser Wilhelm Institute</div>
+            <div class="timeline-desc">Developed general relativity, predicted gravitational waves, and contributed to quantum statistics. Supervised numerous PhD candidates and lectured across Europe.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1912 – 1914</div>
+            <div class="timeline-title">Professor of Theoretical Physics</div>
+            <div class="timeline-sub">ETH Zurich</div>
+            <div class="timeline-desc">Continued work on general relativity and gravitation. Introduced the concept of spacetime curvature.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1909 – 1911</div>
+            <div class="timeline-title">Associate Professor</div>
+            <div class="timeline-sub">University of Zurich</div>
+            <div class="timeline-desc">Focused on statistical mechanics and quantum theory. Published influential papers on specific heat and light quanta.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1902 – 1909</div>
+            <div class="timeline-title">Technical Expert (Patent Clerk)</div>
+            <div class="timeline-sub">Swiss Patent Office, Bern</div>
+            <div class="timeline-desc">Evaluated electromagnetic device patents. During this period wrote the “Annus Mirabilis” papers on the photoelectric effect, Brownian motion, special relativity, and mass–energy equivalence.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION (vertical timeline) -->
+      <section id="education">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">1905</div>
+            <div class="timeline-title">PhD in Physics</div>
+            <div class="timeline-sub">University of Zurich (dissertation: "A New Determination of Molecular Dimensions")</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1896 – 1900</div>
+            <div class="timeline-title">Diploma in Mathematics and Physics</div>
+            <div class="timeline-sub">ETH Zurich</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1895 – 1896</div>
+            <div class="timeline-title">Pre-university studies</div>
+            <div class="timeline-sub">Aargau Cantonal School, Switzerland</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS (already partly in sidebar, but we can add a detailed view) -->
+      <section id="skills">
+        <h2 class="section-title"><i class="fas fa-cogs"></i> Technical Skills</h2>
+        <div class="skills-tags" style="margin-top:0.5rem;">
+          <span class="skill-tag">Tensor calculus</span><span class="skill-tag">Differential geometry</span>
+          <span class="skill-tag">Quantum electrodynamics</span><span class="skill-tag">Thermodynamics</span>
+          <span class="skill-tag">Brownian motion theory</span><span class="skill-tag">Cosmological models</span>
+          <span class="skill-tag">EPR paradox</span><span class="skill-tag">Bose–Einstein statistics</span>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section id="languages">
+        <h2 class="section-title"><i class="fas fa-language"></i> Languages</h2>
+        <div class="lang-grid">
+          <span class="lang-item"><strong>German</strong> (native)</span>
+          <span class="lang-item"><strong>English</strong> (fluent)</span>
+          <span class="lang-item"><strong>French</strong> (working knowledge)</span>
+          <span class="lang-item"><strong>Italian</strong> (basic)</span>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications">
+        <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications & Honours</h2>
+        <div class="cert-grid">
+          <span class="lang-item">Nobel Prize in Physics 1921</span>
+          <span class="lang-item">Copley Medal (Royal Society) 1925</span>
+          <span class="lang-item">Max Planck Medal 1929</span>
+          <span class="lang-item">Franklin Medal 1935</span>
+          <span class="lang-item">Foreign Member of Royal Society</span>
+        </div>
+      </section>
+
+      <!-- PROJECTS (with fake links) -->
+      <section id="projects">
+        <h2 class="section-title"><i class="fas fa-code-branch"></i> Key Projects</h2>
+        <div class="card-grid">
+          <div class="card-item">
+            <h4>General Theory of Relativity</h4>
+            <div class="meta">1915 – 1916</div>
+            <p>Geometric theory of gravitation unifying special relativity and Newton's law.</p>
+            <a href="#" class="fake-link">read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-item">
+            <h4>Photoelectric Effect</h4>
+            <div class="meta">1905</div>
+            <p>Explanation using light quanta (photons), cornerstone of quantum mechanics.</p>
+            <a href="#" class="fake-link">paper <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-item">
+            <h4>Bose–Einstein Statistics</h4>
+            <div class="meta">1924 – 1925</div>
+            <p>Predicted new state of matter (BEC) by extending Bose's work.</p>
+            <a href="#" class="fake-link">details <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="card-item">
+            <h4>EPR Paradox</h4>
+            <div class="meta">1935</div>
+            <p>Thought experiment highlighting quantum entanglement.</p>
+            <a href="#" class="fake-link">view <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> Awards & Distinctions</h2>
+        <div class="card-grid">
+          <div class="card-item"><h4>Nobel Prize in Physics</h4><p>1921 "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect".</p></div>
+          <div class="card-item"><h4>Barnard Medal</h4><p>1920 (for relativity)</p></div>
+          <div class="card-item"><h4>Gold Medal of the RAS</h4><p>1926</p></div>
+          <div class="card-item"><h4>Time Person of the Century</h4><p>1999 (posthumous)</p></div>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications">
+        <h2 class="section-title"><i class="fas fa-book"></i> Selected Publications</h2>
+        <div class="card-grid">
+          <div class="card-item"><h4>On the Electrodynamics of Moving Bodies</h4><p>Annalen der Physik, 1905</p></div>
+          <div class="card-item"><h4>Does the Inertia of a Body Depend Upon Its Energy Content?</h4><p>1905 (E=mc²)</p></div>
+          <div class="card-item"><h4>The Foundation of the General Theory of Relativity</h4><p>Annalen der Physik, 1916</p></div>
+          <div class="card-item"><h4>Cosmological Considerations on the General Theory</h4><p>1917</p></div>
+        </div>
+      </section>
+
+      <!-- REFERENCES -->
+      <section id="references">
+        <h2 class="section-title"><i class="fas fa-users"></i> References</h2>
+        <p><strong>Prof. Max Planck</strong> · University of Berlin · (available upon request)<br>
+        <strong>Prof. Niels Bohr</strong> · University of Copenhagen · (available upon request)<br>
+        <em>Complete reference list provided on request.</em></p>
+      </section>
+
+      <!-- INTERESTS -->
+      <section id="interests">
+        <h2 class="section-title"><i class="fas fa-heart"></i> Interests</h2>
+        <div class="skills-tags">
+          <span class="skill-tag">Violin</span>
+          <span class="skill-tag">Sailing</span>
+          <span class="skill-tag">Philosophy of science</span>
+          <span class="skill-tag">Civil rights advocacy</span>
+          <span class="skill-tag">Mountain hiking</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-note">
+    Digital CV • Scanned from business card QR
+  </footer>
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>
